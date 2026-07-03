@@ -4723,3 +4723,16 @@ textarea {
     margin: 0 auto;
   }
 }
+
+/* Browser comment pass 2026-07-03 - restore subtitle typeface */
+.theme-apple .subhead,
+.theme-apple .section-title p,
+.theme-apple .stacked-title p,
+.theme-apple .dashboard-heading p,
+.theme-apple .hardware-copy > p,
+.theme-apple .process-title p,
+.theme-apple .cta-box p {
+  font-family: var(--font-body) !important;
+  font-weight: 650 !important;
+  letter-spacing: 0 !important;
+}
