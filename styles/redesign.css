@@ -4228,3 +4228,127 @@ textarea {
     min-height: 48px;
   }
 }
+
+/* Browser comment pass 2026-07-03 - hero switch carousel and metric alignment */
+.theme-apple .hero-poster-track {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+.theme-apple .hero-poster-frame:hover .hero-poster-track {
+  animation-play-state: running;
+}
+
+.theme-apple .hero-poster-slide {
+  position: absolute;
+  inset: 0;
+  flex: none !important;
+  width: 100% !important;
+  height: 100%;
+  min-height: inherit;
+  opacity: 0;
+  z-index: 0;
+  transform: scale(1.012);
+  transition: opacity .56s ease, transform .72s ease;
+  pointer-events: none;
+}
+
+.theme-apple .hero-poster-slide.is-active {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+}
+
+.theme-apple .hero-poster-slide.is-exiting {
+  opacity: 0;
+  z-index: 1;
+  transform: scale(1.008);
+}
+
+.theme-apple .hero-poster-slide:nth-child(3) {
+  object-position: 50% 50%;
+}
+
+.theme-apple header.hero .metric b,
+.theme-apple header.hero .hero-primary-metric b,
+.theme-apple header.hero .metric.metric-compact b {
+  min-height: 50px !important;
+  font-size: 40px !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: flex-start !important;
+  white-space: nowrap !important;
+}
+
+.theme-apple header.hero .metric b > span,
+.theme-apple header.hero .hero-primary-metric b > span {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 3px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.theme-apple header.hero .metric .count-value {
+  font-size: 1em !important;
+  line-height: 1 !important;
+}
+
+.theme-apple header.hero .metric .count-unit,
+.theme-apple header.hero .metric.metric-compact b .count-unit,
+.theme-apple header.hero .hero-primary-metric b .count-unit {
+  align-self: baseline !important;
+  margin-left: 0 !important;
+  font-size: .42em !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  transform: none !important;
+}
+
+.theme-apple header.hero .metric:nth-child(2) .count-unit {
+  margin-left: 1px !important;
+  font-size: .4em !important;
+}
+
+.theme-apple #knowledge .report-slab {
+  padding: 0 !important;
+  background: #fff !important;
+  background-image: none !important;
+}
+
+.theme-apple #knowledge .report-slab::after {
+  display: none !important;
+}
+
+.theme-apple #knowledge .report-slab img {
+  background: #fff !important;
+  background-image: none !important;
+}
+
+.theme-apple .lead-toggle {
+  min-height: 38px !important;
+  padding: 0 15px !important;
+  font-size: 13px !important;
+}
+
+@media (max-width: 760px) {
+  .theme-apple header.hero .metric b,
+  .theme-apple header.hero .hero-primary-metric b,
+  .theme-apple header.hero .metric.metric-compact b {
+    min-height: 42px !important;
+    font-size: 32px !important;
+  }
+
+  .theme-apple .lead-toggle {
+    min-height: 36px !important;
+    padding: 0 14px !important;
+    font-size: 12px !important;
+  }
+}

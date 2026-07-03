@@ -95,6 +95,10 @@ document.querySelectorAll(".scene-carousel").forEach((carousel) => {
   setupCarousel(carousel, ".scene-slide", 3600);
 });
 
+document.querySelectorAll(".hero-poster-carousel").forEach((carousel) => {
+  setupCarousel(carousel, ".hero-poster-slide", 3000);
+});
+
 const leadToggle = document.querySelector(".lead-toggle");
 const leadForm = document.querySelector("#leadForm");
 
