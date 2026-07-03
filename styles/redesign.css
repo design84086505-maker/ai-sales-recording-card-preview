@@ -4785,3 +4785,24 @@ textarea {
 .theme-apple .analysis-score span {
   line-height: 1;
 }
+
+/* Browser comment pass 2026-07-03 - DeepSeek emphasis and action report */
+.theme-apple .model-card b {
+  align-items: flex-end !important;
+  gap: 12px !important;
+  font-size: 22px !important;
+  line-height: 1.02 !important;
+}
+
+.theme-apple .model-card b .model-brand {
+  color: #1267ff !important;
+  font-size: clamp(36px, 3.15vw, 50px) !important;
+  line-height: .88 !important;
+  font-weight: 1000 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 14px 28px rgba(18,103,255,.18);
+}
+
+.theme-apple #knowledge .report-ui-score strong {
+  transform: translateY(1px);
+}
