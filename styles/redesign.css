@@ -4754,3 +4754,34 @@ textarea {
   font-weight: 950;
   transform: translateY(.03em);
 }
+
+/* Browser comment pass 2026-07-03 - metric color and quality gauge alignment */
+.theme-apple header.hero .hero-primary-metric .count-value {
+  color: #1267ff !important;
+}
+
+.theme-apple header.hero .metric.metric-compact .count-unit,
+.theme-apple header.hero .metric.metric-compact .count-plus {
+  color: #07101f !important;
+}
+
+.theme-apple .analysis-score {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.theme-apple .analysis-score strong,
+.theme-apple .analysis-score span {
+  margin: 0 !important;
+}
+
+.theme-apple .analysis-score strong {
+  line-height: .92;
+}
+
+.theme-apple .analysis-score span {
+  line-height: 1;
+}
