@@ -11,7 +11,8 @@ function countTo(el) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     const value = Math.round(target * eased);
-    el.innerHTML = `${prefix}<span class="count-value">${value}</span>${suffix ? `<small class="count-unit">${suffix}</small>` : ""}`;
+    const suffixHtml = suffix ? suffix.replace(/\+/g, '<span class="count-plus">+</span>') : "";
+    el.innerHTML = `${prefix}<span class="count-value">${value}</span>${suffixHtml ? `<small class="count-unit">${suffixHtml}</small>` : ""}`;
     if (progress < 1) requestAnimationFrame(frame);
   }
 

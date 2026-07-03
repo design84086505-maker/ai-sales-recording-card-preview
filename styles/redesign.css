@@ -4736,3 +4736,21 @@ textarea {
   font-weight: 650 !important;
   letter-spacing: 0 !important;
 }
+
+/* Browser comment pass 2026-07-03 - stronger metric plus sign */
+.theme-apple .count-plus {
+  display: inline-block;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+}
+
+.theme-apple header.hero .hero-primary-metric .count-unit {
+  font-size: .48em !important;
+}
+
+.theme-apple header.hero .hero-primary-metric .count-plus {
+  font-size: 1.28em;
+  font-weight: 950;
+  transform: translateY(.03em);
+}
