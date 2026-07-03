@@ -4012,3 +4012,67 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* Hero poster carousel pass 2026-07-03 */
+.theme-apple .hero-poster-frame {
+  overflow: hidden;
+}
+
+.theme-apple .hero-poster-carousel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+.theme-apple .hero-poster-track {
+  display: flex;
+  width: 800%;
+  height: 100%;
+  min-height: inherit;
+  animation: heroPosterScrollRight 34s linear infinite;
+  will-change: transform;
+}
+
+.theme-apple .hero-poster-frame:hover .hero-poster-track {
+  animation-play-state: paused;
+}
+
+.theme-apple .hero-poster-slide {
+  flex: 0 0 12.5%;
+  width: 12.5%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.theme-apple .hero-poster-slide:nth-child(3),
+.theme-apple .hero-poster-slide:nth-child(7) {
+  object-position: 50% 50%;
+}
+
+@keyframes heroPosterScrollRight {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 980px) {
+  .theme-apple .hero-poster-carousel,
+  .theme-apple .hero-poster-slide {
+    min-height: clamp(520px, 138vw, 720px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-apple .hero-poster-track {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+  }
+}
