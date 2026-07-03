@@ -4806,3 +4806,55 @@ textarea {
 .theme-apple #knowledge .report-ui-score strong {
   transform: translateY(1px);
 }
+
+/* Browser comment pass 2026-07-03 - align action numbers and normalize plus signs */
+.theme-apple #knowledge .report-ui-grid section {
+  display: grid !important;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 9px;
+  row-gap: 8px;
+}
+
+.theme-apple #knowledge .report-ui-grid em {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 !important;
+  align-self: center;
+}
+
+.theme-apple #knowledge .report-ui-grid b {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 !important;
+  align-self: center;
+}
+
+.theme-apple #knowledge .report-ui-grid span {
+  grid-column: 1 / -1;
+  margin-top: 0 !important;
+}
+
+.theme-apple .count-plus {
+  color: #07101f !important;
+  font-size: 1.34em !important;
+  font-weight: 950 !important;
+  line-height: .9 !important;
+  transform: translateY(.035em);
+}
+
+.theme-apple header.hero .metric .count-unit,
+.theme-apple header.hero .metric.metric-compact b .count-unit,
+.theme-apple header.hero .hero-primary-metric b .count-unit,
+.theme-apple #knowledge .data-card b .count-unit {
+  color: #07101f !important;
+  font-size: .48em !important;
+  margin-left: 1px !important;
+  line-height: 1 !important;
+}
+
+.theme-apple header.hero .metric .count-plus,
+.theme-apple #knowledge .data-card .count-plus {
+  color: #07101f !important;
+  font-size: 1.34em !important;
+}
