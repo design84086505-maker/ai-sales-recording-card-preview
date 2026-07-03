@@ -4420,3 +4420,306 @@ textarea {
     width: min(100%, 430px) !important;
   }
 }
+
+/* Browser comment pass 2026-07-03 - complete poster and report UI */
+.theme-apple .hero-poster-frame {
+  width: min(420px, 100%) !important;
+  min-height: 0 !important;
+  height: auto !important;
+  aspect-ratio: 941 / 1672 !important;
+  background: rgba(238, 246, 255, .72) !important;
+}
+
+.theme-apple .hero-poster-slide {
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.hardware-analysis-board {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.88), rgba(235,246,255,.72));
+  border: 1px solid rgba(255,255,255,.96);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.96),
+    0 18px 44px rgba(37,58,84,.08);
+}
+
+.analysis-head,
+.analysis-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.analysis-head b {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.analysis-head span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.analysis-summary {
+  margin-top: 14px;
+}
+
+.analysis-score {
+  width: 112px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #1267ff;
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,.94) 55%, transparent 56%),
+    conic-gradient(#1267ff 85%, rgba(18,103,255,.13) 0);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.96), 0 16px 34px rgba(18,103,255,.12);
+}
+
+.analysis-score strong {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--font-number);
+  font-size: 38px;
+  line-height: .9;
+}
+
+.analysis-score span {
+  display: block;
+  margin-top: -6px;
+  color: #526074;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.analysis-tags {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.analysis-tags span {
+  min-height: 48px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 8px;
+  color: #0f4fc9;
+  background: rgba(18,103,255,.08);
+  border: 1px solid rgba(18,103,255,.13);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.analysis-mini-bars {
+  margin-top: 14px;
+  display: grid;
+  gap: 9px;
+}
+
+.analysis-mini-bars div {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 9px;
+  color: #102033;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.analysis-mini-bars i {
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(18,103,255,.1);
+  overflow: hidden;
+}
+
+.analysis-mini-bars i::before {
+  content: "";
+  display: block;
+  width: var(--w);
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1267ff, #17b69e);
+}
+
+.theme-apple #knowledge .report-slab.report-ui-card {
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 16px !important;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.94), rgba(239,247,255,.68)) !important;
+  border: 1px solid rgba(255,255,255,.96) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.96), 0 22px 58px rgba(37,58,84,.1);
+}
+
+.theme-apple #knowledge .report-slab.report-ui-card::after {
+  display: none !important;
+}
+
+.report-ui-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(255,255,255,.92);
+}
+
+.report-ui-head span {
+  display: block;
+  color: #1267ff;
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.report-ui-head b {
+  display: block;
+  margin-top: 5px;
+  color: #07101f;
+  font-size: 19px;
+  line-height: 1.18;
+}
+
+.report-ui-head p {
+  margin: 8px 0 0;
+  color: #526074;
+  font-size: 12px;
+  line-height: 1.52;
+  font-weight: 780;
+}
+
+.report-ui-score {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #1267ff;
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,.96) 55%, transparent 56%),
+    conic-gradient(#1267ff 85%, rgba(18,103,255,.13) 0);
+}
+
+.report-ui-score strong {
+  margin-top: 9px;
+  font-family: var(--font-number);
+  font-size: 28px;
+  line-height: .9;
+}
+
+.report-ui-score small {
+  margin-top: -10px;
+  color: #526074;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.report-ui-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.report-ui-grid section {
+  min-height: 116px;
+  padding: 13px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(255,255,255,.92);
+}
+
+.report-ui-grid em {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  color: #fff;
+  background: #1267ff;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.report-ui-grid b {
+  display: block;
+  margin-top: 10px;
+  color: #07101f;
+  font-size: 15px;
+  line-height: 1.22;
+}
+
+.report-ui-grid span {
+  display: block;
+  margin-top: 8px;
+  color: #526074;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 760;
+}
+
+.report-ui-actions {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.report-ui-actions span {
+  min-height: 34px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 999px;
+  color: #0f4fc9;
+  background: rgba(18,103,255,.08);
+  border: 1px solid rgba(18,103,255,.13);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+@media (max-width: 1120px) {
+  .theme-apple .hero-poster-frame {
+    width: min(430px, 100%) !important;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .theme-apple .hero-poster-frame {
+    width: min(100%, 390px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .analysis-summary,
+  .analysis-tags,
+  .report-ui-head,
+  .report-ui-grid,
+  .report-ui-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-summary {
+    align-items: stretch;
+  }
+
+  .analysis-score,
+  .report-ui-score {
+    margin: 0 auto;
+  }
+}
