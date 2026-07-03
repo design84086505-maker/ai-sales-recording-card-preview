@@ -4858,3 +4858,28 @@ textarea {
   color: #07101f !important;
   font-size: 1.34em !important;
 }
+
+/* Browser comment pass 2026-07-03 - center action score label */
+.theme-apple #knowledge .report-ui-score {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.theme-apple #knowledge .report-ui-score strong,
+.theme-apple #knowledge .report-ui-score small {
+  width: 100%;
+  margin: 0 !important;
+  text-align: center;
+  transform: none !important;
+}
+
+.theme-apple #knowledge .report-ui-score strong {
+  line-height: .9 !important;
+}
+
+.theme-apple #knowledge .report-ui-score small {
+  line-height: 1 !important;
+}
