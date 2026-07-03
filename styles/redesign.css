@@ -4352,3 +4352,71 @@ textarea {
     font-size: 12px !important;
   }
 }
+
+/* Browser comment pass 2026-07-03 - restore poster frame sizing */
+.theme-apple .hero-poster-frame {
+  justify-self: end;
+  width: min(560px, 100%) !important;
+  min-height: 650px !important;
+  height: clamp(620px, 51vw, 690px) !important;
+  align-self: start;
+}
+
+.theme-apple .hero-poster-carousel,
+.theme-apple .hero-poster-track,
+.theme-apple .hero-poster-slide {
+  min-height: inherit !important;
+  height: 100% !important;
+}
+
+.theme-apple .product-only-showcase {
+  width: min(560px, 100%) !important;
+  min-height: 0 !important;
+  height: auto !important;
+  aspect-ratio: 941 / 1672 !important;
+  align-self: start;
+  justify-self: start;
+  background: transparent !important;
+}
+
+.theme-apple .product-only-showcase .product-gallery,
+.theme-apple .product-only-showcase .device-stage,
+.theme-apple .product-only-showcase .product-carousel.product-swap {
+  width: 100% !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  aspect-ratio: inherit !important;
+  padding: 0 !important;
+}
+
+.theme-apple .product-only-showcase .device-stage .product-carousel.product-swap img,
+.theme-apple .product-only-showcase .device-stage .product-carousel.product-swap .product-slide,
+.theme-apple .product-only-showcase .device-stage .product-carousel.product-swap .product-poster-slide {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 1120px) {
+  .theme-apple .hero-poster-frame {
+    justify-self: stretch;
+    width: 100% !important;
+    height: clamp(560px, 92vw, 690px) !important;
+  }
+
+  .theme-apple .product-only-showcase {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .theme-apple .hero-poster-frame {
+    height: clamp(520px, 138vw, 650px) !important;
+    min-height: 520px !important;
+  }
+
+  .theme-apple .product-only-showcase {
+    width: min(100%, 430px) !important;
+  }
+}
